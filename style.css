@@ -1,0 +1,56 @@
+body {
+    font-family: "Permanent Marker", cursive;
+    color: #FFFFFF;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#board {
+    width: 375px;
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #444444;
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover {
+    background-color: #555555;
+}
+
+#restartButton {
+    display: block;
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    background-color: #333333;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+#restartButton:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
